@@ -1,8 +1,11 @@
 #!/bin/bash
 # для nginx в докере
-ln -s "/home/box/web/etc/test.conf"  "/etc/nginx/conf.d/test.conf"
+cat "alias l='ls -ln'" > .aliases
 
-# sudo ﻿ln -s /home/box/web/etc/test.conf  /etc/nginx/sites-enabled/test.conf
+#ln -s "/home/box/web/etc/test.conf"  "/etc/nginx/conf.d/test.conf"
+
+sudo ﻿ln -s /home/box/web/etc/test.conf  /etc/nginx/sites-enabled/test.conf
+sudo rm /etc/nginx/sites-enabled/default
 
 
 
